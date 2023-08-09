@@ -4,12 +4,12 @@
 }
 body {
     margin: 0;
-    width: calc(100% - 32px);
-    height: calc(100% - 24px);
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    width: calc(100% - 16px);
+    height: calc(100% - 32px);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,24 +48,24 @@ table thead tr.title td h2 {
     text-align: center;
     font-size: 24px;
 }
-table tbody tr.title {
+table thead tr.p-title {
     background-color: #C8C8C8;
 }
-table tbody tr td {
+table thead tr.p-title td p {
+    font-weight: 600;
+}
+table tbody tr td, table thead tr.p-title td {
     padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 8px;
 }
-table tbody tr td p {
+table tbody tr td p, table thead tr.p-title td p {
     margin: 0;
 }
-table tbody tr.title td p {
-    font-weight: 600;
-}
-table tbody tr td.center {
+table tbody tr td.center, table thead tr.p-title td.center {
     padding-left: 0;
 }
-table tbody tr td.center p {
+table tbody tr td.center p, table thead tr.p-title td.center p {
     width: 100%;
     text-align: center;
 }
